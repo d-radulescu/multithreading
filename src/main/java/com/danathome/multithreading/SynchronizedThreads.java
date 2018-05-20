@@ -1,10 +1,12 @@
+package com.danathome.multithreading;
+
 import java.util.stream.IntStream;
 
 public class SynchronizedThreads {
     private static int counter = 0;
 
     public static synchronized void increment() {
-        ++counter;
+        counter++;
     }
 
     public static void process() {
